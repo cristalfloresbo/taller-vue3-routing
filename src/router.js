@@ -6,9 +6,9 @@ import NotFoundComponent from "./components/NotFoundComponent.vue"
 import { createWebHashHistory, createRouter } from "vue-router";
 
 const routes = [
-  { path: "/", component: AppHome },
-  { path: "/about", component: AppAbout },
-  { path: "/user/:id", component: AppUser },
+  { path: "/", name: 'home', component: AppHome },
+  { path: "/about", name: 'about', component: AppAbout },
+  { path: "/user/:id", name: 'user', component: AppUser },
   { path: "/:pathMatch(.*)", component: NotFoundComponent },
 ];
 
