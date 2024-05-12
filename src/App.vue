@@ -4,6 +4,7 @@
   <RouterView></RouterView>
   <RouterLink to="/">Go to Home</RouterLink>
   <RouterLink to="/about">Go to About</RouterLink>
+  <button @click="redirecTo">Click</button>
 </template>
 
 <script>
@@ -14,6 +15,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods: {
+    redirecTo() {
+      this.$router.push('user/1')
+    }
   }
 }
 </script>
